@@ -11,8 +11,13 @@ org/1999/xhtml">
 <head>
 <title>What are you dropping? </title>
 <link rel="stylesheet" href="drop.css" type="text/css" title="drop.css" media="screen, print"/>
+<style>
+html, body{
+  font-family: "Georgia", serif; color: #009900;
+}
+</style>
 </head>
-<body>
+<body style="background-color: #E9EDE9">
 <form action='add' method='get'>
  <fieldset>
  <P> <b> What are you dropping? </b> </P> <br/>
@@ -29,9 +34,8 @@ org/1999/xhtml">
 <button name='next' value ='true'> Done </button>
 <button name='add' value ='true'> ADD </button>
 
-<aside> - Defines content aside from the content (like a sidebar)
-<table id='table' style="width:100%">
- <caption>Your Donation for the night includes: </caption>
+<table id='table' style="width:20%">
+ <caption>Your Donation for the night: </caption>
   <tr>
     <th>Item</th>
     <th>Amount</th> 
@@ -41,8 +45,6 @@ org/1999/xhtml">
     <td>2</td> 
   </tr>
 </table>
-</aside>
-
 </fieldset>
 </form>
 </body>
