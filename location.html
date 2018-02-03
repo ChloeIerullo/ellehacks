@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Eat Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  funtion addItem(){
+    document.getElementById("print").innerHTML = document.getElementById("location").value
+  }
+</script>
+
+<style>
+
+body{
+  background-color: #5EFF33;
+  height: 100%;
+}
+.container-fluid {
+	height: 100%;
+}
+
+body, html{
+  height:100%;
+}
+
+/* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid text-center" style="height:100%"">    
+  <div style="padding: 70px;">
+      	<img src="picnic.png" style="height:300px; width:300px">
+  </div>
+  <div class="form text-center">
+  <form name="List" onsubmit="addItem()" method="post">
+  Location:
+  <input type="text" placeholder="25 Canterbury Place, Toronto, ON M2N 0E3" size="40" name="location" id="location">
+  <input type="submit" value="GO">
+  </form>
+  </div>
+</div>
+<p id="print"> </p>
+
+<footer class="text-right">
+<img src="email.png" style="height:40px; width:40px">
+<img src="phone.dms" style="height:40px; width:40px">
+
+</footer>
+
+</body>
+</html>
