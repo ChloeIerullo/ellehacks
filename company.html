@@ -34,6 +34,7 @@ body, html{
 
 <div class="row">
   <div class="col-sm-6 text-center">
+    <h1> What are you dropping </h1>
   <form>
   <label for="sell"> Item (select one): </label>
   <select class="form-control text-center" id="sel1" style="width:100px">
@@ -42,14 +43,27 @@ body, html{
         <option>Juice</option>
       </select>
   <label for="amount"> Amount: </label>
-  <input type="text" class="form-control" id="amount" style="width:100px">
-   <div class="button">     
-        <button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal">Add</button>
+  <input type="text" class="form-control" id="amount" style="width:100px"><br><br><br>
+   <div class="button text-center">     
+        <button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal" style="width:50px">Add</button>
+        <button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal" style="width:50px">Done</button>
         <br>
     </div>    
     </form>
     </div>
-  <div class="col-sm-6"></div>
+  <div class="col-sm-6">
+    <div style="padding-bottom: 50px">
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+  </table>
+  </div>
+  </div>
+
 
 </div>
 
