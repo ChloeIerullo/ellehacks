@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="refresh" content="20">
   <title>Eat Up</title>
 	<meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,175 @@
 	  <link rel="stylesheet" type="text/css" href="eatup.css">
 
 <link rel="stylesheet" type="text/css" href="eatup.css">
+ <style>
+body {
+  font-size: 62.5%;
+  font-style: Arial;
+}
 
+.animation-box {
+  width: 85%;
+  height: 27.5rem;
+  
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+
+
+.first-text {
+  font-size: 3.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: #65D762;
+}
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: bottomFadeOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  color: #65D762;
+}
+
+.third-text {
+  font-size: 3.4rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #65D762;
+  /*white-space: nowrap;*/
+}
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #65D762;
+  animation-name: fadeInOut;
+  animation-delay: 10.5s;
+  animation-duration: 6s;
+}
+
+.fifth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #65D762;
+  animation-name: bottomFadeOut;
+  animation-delay: 13s;
+  animation-duration: 9s;
+}
+</style>
 
 </head>
 
@@ -29,14 +198,23 @@
 				<img src="logo.png" alt="logo" width="160" height="160">
 			</div> 
 			
-      <br><br><br>
-	  
-      <div class="center"> 
+      <br><br>
+      
+      <section class="animation-box">
+    <div class="first-text"> Over 800,000 people visit a food bank each month. </div>
+    <div class="second-text"> $31 billion worth of food is wasted in Canada each year.</div>
+    <div class="third-text"> One in 8 Canadian families struggle to put food on the table.</div>
+    <div class="fourth-text"> In Toronto alone the amount of food thrown away is equivalent to 35,000 African elephants.</div>
+    <div class="fifth-text"> In Toronto, taxpayers spend nearly $10 million a year to dispose of food waste that's not composted.</div>
+  </section>
+
+
+
+      <div class="text-center"> 
       	<a href = "location.html" target="_blank"><button type="button" class="btn btn-outline-success btn-lg">Consumer</button></a>
-      	<a href = "drop.html" target="_blank"><button type="button" class="btn btn-outline-success btn-lg">Companies</button>
+      	<a href = "drop.html" target="_blank"><button type="button" class="btn btn-outline-success btn-lg">Companies</button></a>
 
       </div>
-
 
 
 </body>
