@@ -17,7 +17,7 @@ body{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #E6DEDE;
+    background-color: white;
 }
 
 /* Links inside the dropdown */
@@ -28,7 +28,7 @@ body{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {background-color: white}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -37,9 +37,11 @@ body{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: white;
 }    
 table {
+	width: 150px;
+    height: 70px;
     border-collapse: collapse;
     margin-right: 0px;
     margin-left: auto;
@@ -49,12 +51,9 @@ table, th, td {
     text-align: center;
 }
 table tr:nth-child(even) {
-    background-color: #eee;
+    background-color: #white;
 }
 table th {
     color: white;
     background-color: black;
-}
-table{
-    margin-top:0px
 }
