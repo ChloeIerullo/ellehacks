@@ -247,3 +247,12 @@ h4 {
 	.text-right{
 		padding-left:1000px;
 	}
+	
+	.text-left{
+		padding-left:150px;
+		padding-top:140px;
+	}
+	
+	.badge{
+		padding-left: 600px;
+	}
