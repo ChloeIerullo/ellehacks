@@ -9,7 +9,7 @@
 			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 			  <link rel="stylesheet" type="text/css" href="eatup.css">
-	<script src="test.js"></script>
+	
 
 </head>
 
@@ -30,23 +30,13 @@
 		<h1>Starbucks,</h1>
     <h2> What are you dropping off?</h2>
 	</div>
-  <form>
-	
-   	<div class="slightRight">
-      <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Quantity</th>
-        </tr>
-      </thead>
-    </table>
-    </div>
-    </div>
-	
-	<div class="inputAlign">
-  	  <label for="sell"> Item (select one): </label>
-  		<select class="form-control text-center" id="mySelect" style="width:130px">
+  <br><br><br><br>
+  <div class="row">
+
+  	<div class="col-lg-6">
+  		<div style="padding-left:50%">
+  	  <label for="mySelect" style="font-size:20px"> Item (select one): </label>
+  		<select id="mySelect" class="form-control text-center"  style="width:130px;">
 			<option> </option>
         	<option value="Cookies">Cookies</option>
         	<option value="Sandwich">Sandwich</option>
@@ -57,22 +47,31 @@
 			<option value="Salad">Salad</option>
       	</select>
 		
-  	  <label for="amount"> Amount: </label>
-  	<input type="text" class="form-control" id="amount" style="width:130px"> 
-	</div>
+  	  <label for="amount" style="font-size:20px"> Amount: </label>
+  	<input id="amount" type="number" name="amount" class="form-control" style="width:130px"> 
 	<br>
-   	<div class="alignButtons">     
-		<button type="button" class="btn btn-outline-success btn-lg" data-toggle="modal" data-target="#myModal">Add</button>
-		<button type="button" class="btn btn-outline-success btn-lg" data-toggle="modal" data-target="#myModal2">Drop</button>
-    </div>    
-    </form>
+   	     <div style="padding-right: 220px">
+		<button type="button" class="btn btn-outline-success btn-lg btn-block" data-toggle="modal" data-target="#myModal" name="add" value='true' id="add">Add</button>
+	</div>
+		
+	</div>
+	</div>
+	<div class="col-lg-6">
+		<div style="text-align:center;  padding-right: 50px">
+      <table id="table" class="table table-striped" style="font-size:20px">
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+        </tr>
+      
+    </table>
     </div>
-	
-	
- 	
+   
+   </div>
 
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="test.js"></script>
 
-</div>
 
 </body>
 </html>
