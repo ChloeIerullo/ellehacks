@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Food Drop Off</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="eatup.css">
+
+
+<style>
+
+body{
+  background-color: #5EFF33;
+  height: 100%;
+}
+.container-fluid {
+	height: 100%;
+}
+
+body, html{
+  height:100%;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="row">
+  <div class="col-sm-6 text-center">
+  <form>
+  <label for="sell"> Item (select one): </label>
+  <select class="form-control text-center" id="sel1" style="width:100px">
+        <option>Cookies</option>
+        <option>Sandwich</option>
+        <option>Juice</option>
+      </select>
+  <label for="amount"> Amount: </label>
+  <input type="text" class="form-control" id="amount" style="width:100px">
+   <div class="button">     
+        <button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal">Add</button>
+        <br>
+    </div>    
+    </form>
+    </div>
+  <div class="col-sm-6"></div>
+
+</div>
+
+</body>
+</html>
