@@ -18,13 +18,21 @@ body { background: #E9EDE9;
 	padding-left: 1140px;
 }
 
+.slightRight {
+	padding-left: 440px;
+}
+
 .floating-box {
     float: left;
-    width: 700px;
+    width: 680px;
     height: 100px;
 
 }
 
+.alignButtons {
+	float:left;
+	padding-left: 250px;
+}
 
 h3 {
 	color: #2EAA2B;
@@ -37,8 +45,21 @@ h4 {
 	text-align: center;
 }
 
+.inputAlign {
+	padding-top: 40px;
+	padding-left:270px;
+}
+
+.center {
+	text-align: center;
+	padding-top:225px;
+}
+
+.centerCompany{
+	text-align:center;
+}
+
 .buttons {
-		color: #65D762 !important;
 		padding-top: 20px;
 	    padding-right: 170px;
 	    padding-bottom: 50px;
@@ -58,5 +79,171 @@ h4 {
 	.popUp{
 		color:#2EAA2B;
 	}
+
+	.container-fluid {
+		height: 100%;
+	}
+
+	.move{
+		color: #2EAA2B;
+		padding-top:30px;
+		padding-left:65px;
+	}
 	
+
+	body {
+	  font-size: 62.5%;
+	  font-style: Arial;
+	}
 	
+	.animation-box {
+	  width: 85%;
+	  height: 27.5rem;
+	  margin: 2px auto 20px;
+	  overflow: hidden;
+	  position: relative;
+	}
+	
+	.animation-container {
+	  width: 1000rem;
+	  height: 30rem;
+	}
+	
+	@keyframes topFadeOut {
+	  0% {
+	    position: absolute;
+	    top: -3rem;
+	    opacity: 0;
+	  }
+	  75% {
+	    position: absolute;
+	    top: 25%;
+	    opacity: 1;
+	  }
+	  100% {
+	    opacity: 0;
+	  }
+	}
+	@keyframes bottomFadeOut {
+	  0% {
+	    position: absolute;
+	    bottom: -5rem;
+	    opacity: 0;
+	  }
+	  75% {
+	    position: absolute;
+	    bottom: 25%;
+	    opacity: 1;
+	  }
+	  100% {
+	    opacity: 0;
+	  }
+  
+	}
+	@keyframes topFadeOutVertical {
+	  0% {
+	    position: absolute;
+	    top: -3rem;
+	    opacity: 0;
+	  }
+	  75% {
+	    position: absolute;
+	    top: 45%;
+	    opacity: 1;
+	  }
+	  100% {
+	    opacity: 0;
+	  }
+	}
+	@keyframes rightFadeInOut {
+	  0% {
+	    position: absolute;
+	    right: -3rem;
+	    opacity: 0;
+	  }
+	  75% {
+	    position: absolute;
+	    right: 10rem;
+	    opacity: 1;
+	  }
+	  100% {
+	    opacity: 0;
+	    right: 10rem;
+	  }
+	}
+	
+	@keyframes fadeInOut {
+	  0% {
+	    opacity: 0;
+	  }
+	  45% {
+	    opacity: 1;
+	  }
+	  100% {
+	    opacity: 0%;
+	  }
+	}
+	
+	.first-text {
+	  font-size: 3.4rem;
+	  position: absolute;
+	  left: 2.5rem;
+	  top: 5rem;
+	  opacity: 0;
+	  animation-name: topFadeOut;
+	  animation-duration: 5s;
+	  color: #65D762;
+	}
+	
+	.second-text {
+	  font-size: 3.4rem;
+	  position: absolute;
+	  top: 8.5rem;
+	  opacity: 0;
+	  animation-name: bottomFadeOut;
+	  animation-delay: 3s;
+	  animation-duration: 6s;
+	  color: #65D762;
+	}
+	.third-text {
+	  font-size: 3.4rem;
+	  position: absolute;
+	  left: 45%;
+	  top: 45%;
+	  opacity: 0;
+	  animation-name: topFadeOut;
+	  animation-delay: 7.5s;
+	  animation-duration: 6s;
+	  color: #65D762;
+	  /*white-space: nowrap;*/
+	}
+	.fourth-text {
+	  font-size: 3.4rem;
+	  position: absolute;
+	  top: 10.5rem;
+	  left: 10%;
+	  opacity: 0;
+	  color: #65D762;
+	  animation-name: fadeInOut;
+	  animation-delay: 10.5s;
+	  animation-duration: 6s;
+	}
+	.fifth-text {
+	  font-size: 3.4rem;
+	  position: absolute;
+	  left: 5%;
+	  bottom: 25%;
+	  opacity: 0;
+	  color: #65D762;
+	  animation-name: bottomFadeOut;
+	  animation-delay: 13s;
+	  animation-duration: 9s;
+	}
+	
+	.text-center{
+		padding-bottom: 2px;
+	}
+	
+	.text-right{
+		padding-left:1000px;
+	}

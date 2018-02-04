@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 	<html>
 		<head>
+						  <title>EatUp</title>
+
 			<meta charset="utf-8">
 			  <meta name="viewport" content="width=device-width, initial-scale=1">
-			  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+			  
 			  <link rel="stylesheet" type="text/css" href="eatup.css">
-			  <title>EatUp</title>
-		</head>
+
+
+</head>
+
+
 		<body>
 			<div class="fixed">
 				<div class="right">
@@ -32,9 +39,27 @@
 				<button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal2">Freshii</button>
 				<br></br>
 				<button type="button" class="btn btn-outline-success btn-md btn-block" data-toggle="modal" data-target="#myModal3">Jack Astors</button>
+				
+				
+				<div class="move">
+				  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+				    Dietary Restrictions
+				  </button>
+				  <div class="dropdown-menu">
+				    <a class="dropdown-item" href="#">Halal</a>
+				    <a class="dropdown-item" href="#">Vegitarian</a>
+				    <a class="dropdown-item" href="#">Vegan</a>
+				  </div>
+				</div>
+			
+			  
+			    </div>
 			</div>
 		</div>
+		
 			<div id="map"></div>
+
+		
 			
 			<div class="popUp">
 			<div class="modal fade" id="myModal" role="dialog">
@@ -96,7 +121,8 @@
 				</div>
 			</div>
 			</div>
-
+			
+	   
 		
 			<script>
 				function initMap(){
